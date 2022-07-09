@@ -1,3 +1,11 @@
+/*
+ * AUTHOR: Zadock
+ * GITHUB: https://github.com/zadockmaloba
+ * EMAIL: zadockmaloba@outlook.com
+ *
+ * LICENSE: GPL-V3
+*/
+
 #ifndef BOARD_H
 #define BOARD_H
 

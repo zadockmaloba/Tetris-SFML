@@ -1,3 +1,11 @@
+/*
+ * AUTHOR: Zadock
+ * GITHUB: https://github.com/zadockmaloba
+ * EMAIL: zadockmaloba@outlook.com
+ *
+ * LICENSE: GPL-V3
+*/
+
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 

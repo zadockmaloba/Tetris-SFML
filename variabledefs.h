@@ -23,7 +23,8 @@ enum DEFINEDBLOCKS{
     Tshape,
     Sshape,
     Nshape,
-    Ushape
+    Ushape,
+    PyramidShape
 };
 
 enum DEFINEDTRANSLATIONS{

@@ -15,61 +15,90 @@ BlockObject::BlockObject(int bType, const sf::Color &col)
     switch (m_blockType) {
     case DEFINEDBLOCKS::Ishape:
         this->m_blockMap = {
-            {1},
-            {1},
-            {1},
-            {1}
+            {1,0,0,0},
+            {1,0,0,0},
+            {1,0,0,0},
+            {1,0,0,0}
         };
         break;
     case DEFINEDBLOCKS::Jshape:
         this->m_blockMap = {
-            {0,1},
-            {0,1},
-            {1,1}
+            {0,0,0,0},
+            {0,1,0,0},
+            {0,1,0,0},
+            {1,1,0,0}
         };
         break;
     case DEFINEDBLOCKS::Lshape:
         this->m_blockMap = {
-            {1,0},
-            {1,0},
-            {1,1}
+            {0,0,0,0},
+            {1,0,0,0},
+            {1,0,0,0},
+            {1,1,0,0}
         };
         break;
     case DEFINEDBLOCKS::Oshape:
         this->m_blockMap = {
-            {1,1},
-            {1,1}
+            {0,0,0,0},
+            {0,0,0,0},
+            {1,1,0,0},
+            {1,1,0,0}
         };
         break;
     case DEFINEDBLOCKS::Sshape:
         this->m_blockMap = {
-            {0,1,1},
-            {1,1,0}
+            {0,0,0,0},
+            {0,0,0,0},
+            {0,1,1,0},
+            {1,1,0,0}
         };
         break;
     case DEFINEDBLOCKS::Tshape:
         this->m_blockMap = {
-            {1,1,1},
-            {0,1,0},
-            {0,1,0}
+            {0,0,0,0},
+            {1,1,1,0},
+            {0,1,0,0},
+            {0,1,0,0}
         };
         break;
     case DEFINEDBLOCKS::Zshape:
         this->m_blockMap = {
-            {1,1,0},
-            {0,1,1}
+            {0,0,0,0},
+            {0,0,0,0},
+            {1,1,0,0},
+            {0,1,1,0}
         };
         break;
     case DEFINEDBLOCKS::Nshape:
         this->m_blockMap = {
-            {1,1,1},
-            {1,0,1}
+            {0,0,0,0},
+            {0,0,0,0},
+            {1,1,1,0},
+            {1,0,1,0}
         };
         break;
     case DEFINEDBLOCKS::Ushape:
         this->m_blockMap = {
-            {1,0,1},
-            {1,1,1}
+            {0,0,0,0},
+            {0,0,0,0},
+            {1,0,1,0},
+            {1,1,1,0}
+        };
+        break;
+    case DEFINEDBLOCKS::PyramidShape:
+        this->m_blockMap = {
+            {0,0,0,0},
+            {0,0,0,0},
+            {0,1,0,0},
+            {1,1,1,0}
+        };
+        break;
+    default:
+        this->m_blockMap = {
+            {0,0,0,0},
+            {1,0,0,0},
+            {1,0,0,0},
+            {1,1,0,0}
         };
         break;
     }

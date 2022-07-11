@@ -23,6 +23,7 @@ public:
     void moveBlock(const BlockObject*, const sf::Vector2i &newPos);
     void translateBlock(BlockObject*, int definedTranslation);
     void renderBlocks();
+    const sf::Color colorSelect(int colorHandle);
 
     const std::map<const BlockObject *, sf::Vector2i> &entityMap() const;
 

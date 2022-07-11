@@ -73,6 +73,38 @@ void Graphics::renderBlocks()
     }
 }
 
+const sf::Color Graphics::colorSelect(int colorHandle)
+{
+    sf::Color cl;
+    switch (colorHandle) {
+    case DEFINEDCOLORS::Blue:
+        cl = sf::Color::Blue;
+        break;
+    case DEFINEDCOLORS::Green:
+        cl = sf::Color::Green;
+        break;
+    case DEFINEDCOLORS::Magenta:
+        cl = sf::Color::Magenta;
+        break;
+    case DEFINEDCOLORS::Red:
+        cl = sf::Color::Red;
+        break;
+    case DEFINEDCOLORS::White:
+        cl = sf::Color::White;
+        break;
+    case DEFINEDCOLORS::Yellow:
+        cl = sf::Color::Yellow;
+        break;
+    case DEFINEDCOLORS::Cyan:
+        cl = sf::Color::Cyan;
+        break;
+    default:
+        cl = sf::Color::White;
+        break;
+    }
+    return cl;
+}
+
 const std::map<const BlockObject *, sf::Vector2i> &Graphics::entityMap() const
 {return m_entityMap;}
 

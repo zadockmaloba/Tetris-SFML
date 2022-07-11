@@ -32,6 +32,16 @@ enum DEFINEDTRANSLATIONS{
     AntiClockwise
 };
 
+enum DEFINEDCOLORS{
+    Blue,
+    Red,
+    Yellow,
+    White,
+    Cyan,
+    Magenta,
+    Green
+};
+
 #define boolVect2D(x, y, z) std::vector<std::vector<bool>> z( y , std::vector<bool> (x, 0))
 
 #endif // VARIABLEDEFS_H

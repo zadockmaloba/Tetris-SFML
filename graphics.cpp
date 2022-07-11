@@ -70,6 +70,7 @@ void Graphics::translateBlock(BlockObject *block, int definedTranslation)
 
 void Graphics::renderBlocks()
 {
+    this->m_boardptr->clear();
     for(auto &v : m_entityMap)
     {
         drawBlock((v.first));

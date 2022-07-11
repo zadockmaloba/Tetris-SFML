@@ -51,9 +51,12 @@ void Graphics::translateBlock(BlockObject *block, int definedTranslation)
         auto mp = block->blockMap();
         boolVect2D(mp.size(), mp[0].size(), transpose);
 
-        for(int i = 0; i < mp.size(); ++i){
-            for(int j = mp[i].size()-1; j >= 0; --j){
-                transpose[j][i] = mp[i][j];
+        for(int i = 0; i < 4; ++i){
+            for(int j = 0; j < 4; ++j){
+                //First row -> last column
+                auto tmp = 3;
+                std::cout<< "{TMP}" << tmp << "{IDX}"<< tmp - 1 << "\n";
+                transpose[j][tmp - i] = mp[i][j];
             }
         }
         block->setBlockMap(transpose);

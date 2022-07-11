@@ -22,7 +22,7 @@ public:
     void handleEvents(const sf::Event *evntptr);
     bool detectAtBorder(BlockObject *tmp);
     bool detectCollision(BlockObject *tmp);
-
+    bool detectCellOccupied(const sf::Vector2i &pos);
 
 private:
     Graphics gfxHandle;

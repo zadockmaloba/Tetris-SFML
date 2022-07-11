@@ -20,10 +20,12 @@ void Graphics::drawBlock(const BlockObject *block)
     auto const pos = entityMap().at(block);
 
     auto mp = block->blockMap();
+
     for(int i = 0; i < mp.size(); ++i){
         for(int j = 0; j < mp[i].size(); ++j){
-            if(mp[i][j])
+            if(mp[i][j]){
                 m_boardptr->at({pos.x+i, pos.y+j})->setFillColor(block->blockColor());
+            }
         }
     }
 }
@@ -120,4 +122,9 @@ int Graphics::colCount()
 int Graphics::rowCOunt()
 {
     return m_boardptr->rows();
+}
+
+Board *Graphics::boardptr() const
+{
+    return m_boardptr;
 }

@@ -30,6 +30,8 @@ public:
     int colCount();
     int rowCOunt();
 
+    Board *boardptr() const;
+
 private:
     Board *m_boardptr;
     std::map <const BlockObject*, sf::Vector2i> m_entityMap;

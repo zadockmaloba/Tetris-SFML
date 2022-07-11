@@ -40,7 +40,6 @@ void init_window(sf::RenderWindow* winPtr)
 
     while(winPtr->isOpen())
     {
-        brd.clear();
         winPtr->clear();
         sf::Event m_evnts;
         while(winPtr->pollEvent(m_evnts))
@@ -50,10 +49,8 @@ void init_window(sf::RenderWindow* winPtr)
 
             lgc.handleEvents(&m_evnts);
         }
-
-        lgc.run();
-
         brd.draw();
+        lgc.run();
         winPtr->display();
     }
 }
